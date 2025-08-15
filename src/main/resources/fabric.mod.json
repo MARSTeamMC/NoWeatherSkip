@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "noweatherskip_mt",
+	"version": "${version}",
+	"name": "NoWeatherSkip",
+	"description": "In Minecraft, sleeping always skips rain and snow. NoWeatherSkip changes this. Now, when players sleep, rain and snow remain and change naturally afterward, but thunder changes to a less dangerous variant.",
+	"authors": [
+		"MARS Team MC",
+		"MDen",
+		"cocer"
+	],
+	"contact": {
+		"homepage": "https://github.com/MARSTeamMC/NoWeatherSkip",
+		"sources": "https://github.com/MARSTeamMC/NoWeatherSkip"
+	},
+	"license": "BSD 2-Clause License",
+	"icon": "assets/noweatherskip_mt/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mars.noweatherskip_mt.NoWeatherSkip"
+		]
+	},
+	"mixins": [
+		"noweatherskip_mt.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": ">=1.16.5 <1.22",
+		"java": ">=8",
+		"fabric": "*"
+	}
+}
