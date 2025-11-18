@@ -27,6 +27,7 @@ public class ServerWorldMixin {
 	private void redirectResetWeather(ServerWorld instance) {
 		if (this.worldProperties.isThundering()) {
 			this.worldProperties.setThundering(false);
+			this.worldProperties.setThunderTime(0);
 		}
 	}
 }
